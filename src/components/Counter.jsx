@@ -50,7 +50,7 @@ const Counter = () => {
 					</div>
 				</div>
 				<div className="mt-5">
-					<ToggleDarkMode className="w-full px-6 py-3 text-center text-white bg-blue-500 hover:bg-blue-600 transition-all rounded-lg"></ToggleDarkMode>
+					<ToggleDarkMode className="w-full px-6 py-3 text-center text-white bg-teal-500 hover:bg-teal-600 transition-all rounded-lg"></ToggleDarkMode>
 				</div>
 			</div>
 		</div>
