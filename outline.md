@@ -1,0 +1,12 @@
+-   Install redux-saga
+-   Redux-saga folder structure
+-   Basic Generator function
+-   Redux-saga work flow
+    -> Redux action dispatch from component(getNews)
+    -> Watcher saga catches the action
+    -> Handler call a function to make the request(handleGetNews)
+    -> Call requestGetNews
+    -> setNews
+    -> update component
+-   Basic call, fork, all, takeLastest, takeEvery, select, put, take
+-   Practice fetching data with Redux Saga

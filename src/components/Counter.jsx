@@ -22,11 +22,11 @@ const Counter = () => {
 	};
 
 	const handleDownValue = (value) => {
-		dispatch(downByValue({ value: value }));
+		dispatch(downByValue(value));
 	};
 
 	const handleUpValue = (value) => {
-		dispatch(upByValue({ value: value }));
+		dispatch(upByValue(value));
 	};
 
 	return (
