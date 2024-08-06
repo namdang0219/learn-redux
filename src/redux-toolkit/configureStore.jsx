@@ -1,5 +1,5 @@
 import { configureStore, combineReducers } from "@reduxjs/toolkit";
-import counterSlice, { upByValue } from "./counterSlice";
+import counterSlice from "./counterSlice";
 import globalSlice from "./globalSlice";
 import logger from 'redux-logger'
 import createSagaMiddleware from "redux-saga";
@@ -10,8 +10,6 @@ const reducer = combineReducers({
 	counter: counterSlice,
 	global: globalSlice,
 })
-
-
 
 // My custom middelware to logger store state
 // const loggerMiddleware = (store) => (next) => (action) => {

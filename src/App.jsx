@@ -1,17 +1,10 @@
-import React, { useEffect } from "react";
-import { useDispatch, useSelector } from "react-redux";
-import { getNews } from "./sagas/news/newsSlice";
+import React from "react";
+import HackerNews from "./components/HackerNews";
 
 const App = () => {
-	const dispatch = useDispatch();
-	useEffect(() => {
-		dispatch(getNews());
-	}, [dispatch]);
-
-	const hits = useSelector((state) => state.news.hits);
-	console.log("🚀 ~ App ~ hits:", hits)
-
-	return <div className="p-5"></div>;
+	return <div className="p-5">
+		<HackerNews></HackerNews>
+	</div>;
 };
 
 export default App;

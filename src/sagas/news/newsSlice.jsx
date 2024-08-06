@@ -6,6 +6,7 @@ const newsSlice = createSlice({
 		hits: [],
 		loading: true,
 		errorMessage: "",
+		query: ''
 	},
 	reducers: {
 		setNews: (state, action) => ({
@@ -21,9 +22,13 @@ const newsSlice = createSlice({
 			...state,
 			errorMessage: action.payload,
 		}),
+		setQuery: (state, action) => ({
+			...state,
+      query: action.payload,
+		})
 	},
 });
 
-export const { setNews, getNews, setLoading, setErrorMessage } = newsSlice.actions;
+export const { setNews, getNews, setLoading, setErrorMessage, setQuery } = newsSlice.actions;
 
 export default newsSlice.reducer;
